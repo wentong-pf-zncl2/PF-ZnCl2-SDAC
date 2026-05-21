@@ -1,0 +1,14 @@
+l=imread('F:\新建文件夹 (2)\873accf33caaef0d9f0f0f86e45af79d.png');
+whos;
+T=rgb2gray(l);
+J=imadjust(T,[0.1,0.15],[0.1,1]);
+level=graythresh(J);
+BW=imbinarize(J,level);
+S=numel(BW);
+s=sum(sum(BW));
+ratio=s/S;
+figure;
+subplot(221),imshow(l);xlabel('(a)彩色图片');
+subplot(222),imshow(T);xlabel('(b)灰度图片');
+subplot(223),imshow(J);xlabel('(c)调整灰度图片');
+subplot(224),imshow(BW);xlabe('(d)二值图片');
