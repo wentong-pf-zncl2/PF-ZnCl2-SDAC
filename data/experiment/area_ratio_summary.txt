@@ -1,0 +1,8 @@
+# Dendrite area ratio from phase-field simulation (Figure 3d)
+# Calculated by integrating phi field over the entire domain
+# COMSOL path: Results -> Derived Values -> Integration
+
+tau (s)      Area_Ratio
+0.00036      0.6978
+0.00034      0.7016
+0.00032      0.6962
